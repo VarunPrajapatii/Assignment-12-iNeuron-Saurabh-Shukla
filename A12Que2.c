@@ -1,6 +1,6 @@
 // 2. Write a recursive function to print first N natural numbers in reverse order
 #include<stdio.h>
-void printrev(int);
+void printn(int);
 
 int main()
 {
