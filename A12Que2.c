@@ -1,22 +1,24 @@
 // 2. Write a recursive function to print first N natural numbers in reverse order
 #include<stdio.h>
-void printn(int);
+void printnrev(int);
 
 int main()
 {
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
-    printn(n);
+    printnrev(n);
 }
 
-void printn(int n)
+void printnrev(int n)
 {
-    if(n==1)
-        cout<<"1 ";
+    if (n==1)
+        cout<<"1";
     else
     {
-        printn(n-1);
         cout<<n<<" ";
+        printnrev(n-1);
     }
+    
 }
+
