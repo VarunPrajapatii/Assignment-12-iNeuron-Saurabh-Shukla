@@ -7,19 +7,16 @@ int main()
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
-    printrev(n);
+    printn(n);
 }
 
-void printrev(int n)
+void printn(int n)
 {
     if(n==1)
-    {
-        printf("1 ");
-        return;
-    }
+        cout<<"1 ";
     else
     {
-        printf("%d ", n);
-        printrev(n-1);
+        printn(n-1);
+        cout<<n<<" ";
     }
 }
